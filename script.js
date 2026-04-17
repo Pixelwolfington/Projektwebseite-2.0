@@ -4,6 +4,7 @@ const projects = [
     team: "3 Schüler",
     details:
       "Ihr entwickelt ein Spiel in einem Online-Programm auf einer Webseite. Nach der Fertigstellung druckt ihr passende Elemente als 3D-Modelle aus.",
+      "Die Gruppe entwickelt ein Spiel in einem Online-Programm auf einer Webseite. Nach Fertigstellung werden Elemente des Spiels als 3D-Modelle ausgedruckt.",
     material: "Online-Programm, 3D-Druck",
   },
   {
@@ -11,6 +12,7 @@ const projects = [
     team: "2 Schüler",
     details:
       "Ihr habt mit demselben Online-Programm ein Solarsystem modelliert und als 3D-gedrucktes Exemplar umgesetzt. So könnt ihr alle Planeten anschauen.",
+      "Mit demselben Online-Programm wurde ein Solarsystem modelliert und als 3D-gedrucktes Exemplar umgesetzt. Alle Planeten können betrachtet werden.",
     material: "Online-Programm, 3D-Druck",
   },
   {
@@ -18,6 +20,7 @@ const projects = [
     team: "2 Schüler",
     details:
       "Ihr habt den Flughafen Zürich als 1:1-Nachbau in Holz gestaltet. Dafür habt ihr Farben, Leim und weitere Werkmaterialien eingesetzt.",
+      "Die Gruppe hat den Flughafen Zürich als 1:1-Nachbau in Holz gestaltet. Dafür nutzten sie Farben, Leim und weitere Werkmaterialien.",
     material: "Holz, Farben, Leim",
   },
   {
@@ -25,6 +28,7 @@ const projects = [
     team: "3 Schüler",
     details:
       "Mit Karton, Toilettenrollen und Leim habt ihr den Big Ben nachgebaut. Zusätzlich baut ihr noch weitere unterschiedliche Türme.",
+      "Mit Karton, Toilettenrollen und Leim entstand ein Nachbau des Big Ben. Zusätzlich wurden weitere unterschiedliche Türme gebaut.",
     material: "Karton, Toilettenrollen, Leim",
   },
   {
@@ -32,6 +36,7 @@ const projects = [
     team: "Schülergruppe",
     details:
       "In Minecraft habt ihr die Altstadt von Sitten nachgebaut. Ausserdem fügt ihr mittelalterliche Türme hinzu und baut sie weiter aus.",
+      "Im Spiel Minecraft wurde die Altstadt von Sitten nachgebaut. Ergänzt wurde das Projekt durch mittelalterliche Türme.",
     material: "Minecraft",
   },
   {
@@ -39,6 +44,7 @@ const projects = [
     team: "2 Schüler",
     details:
       "Ihr stellt eine kreative Lampe aus Holz, Farbe und einer Jack Daniel’s Flasche her. Das Endprodukt ist eine dekorative kleine Lampe mit Holzrahmen.",
+      "Die Gruppe baute eine kreative Lampe aus Holz, Farbe und einer Jack Daniel’s Flasche. Das Ergebnis ist eine dekorative kleine Lampe mit Holzrahmen.",
     material: "Holz, Farbe, Jack Daniel’s Flasche",
   },
   {
@@ -46,6 +52,7 @@ const projects = [
     team: "2 Schüler",
     details:
       "Aus einem ca. 1000-Liter-Ölfass baut ihr einen kleinen Schaft mit Holzverkleidung im Inneren.",
+      "Aus einem ca. 1000-Liter-Ölfass wurde ein kleiner Schaft mit Holzverkleidung im Inneren gebaut.",
     material: "Ölfass, Holz",
   },
 ];
