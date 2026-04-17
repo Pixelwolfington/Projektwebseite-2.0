@@ -50,6 +50,8 @@ h1 {
 .intro {
   max-width: 62ch;
   opacity: 0.95;
+}
+
   margin-bottom: 1rem;
 }
 
@@ -128,6 +130,8 @@ h2 {
   max-width: 75ch;
 }
 
+.project-grid {
+  margin-top: 1.2rem;
 .toolbar {
   margin-top: 1rem;
   display: grid;
@@ -237,6 +241,8 @@ input[type="search"] {
   font-size: 1.1rem;
 }
 
+.project-team {
+  margin: 0.35rem 0 0.45rem;
 .project-tech {
   margin: 0.35rem 0 0.45rem;
   margin: 0.4rem 0 0.6rem;
@@ -257,6 +263,8 @@ input[type="search"] {
   font-size: 0.9rem;
 }
 
+footer {
+  border-top: 1px solid var(--border);
 .empty-state {
   grid-column: 1 / -1;
   text-align: center;

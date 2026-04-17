@@ -24,6 +24,7 @@ const projects = [
     title: "Flughafen Zürich als Holzmodell",
     team: "2 Schüler",
     details:
+      "Ihr habt den Flughafen Zürich als Holzmodell gestaltet. Dafür habt ihr Farben, Leim und weitere Werkmaterialien eingesetzt.",
       "Ihr habt den Flughafen Zürich als 1:1-Nachbau in Holz gestaltet. Dafür habt ihr Farben, Leim und weitere Werkmaterialien eingesetzt.",
     material: "Holz, Farben, Leim",
     category: "Modellbau",
@@ -34,6 +35,7 @@ const projects = [
     title: "Big Ben und weitere Türme",
     team: "3 Schüler",
     details:
+      "Mit Karton, Toilettenrollen und Leim habt ihr den Big Ben nachgebaut. Zusätzlich baut ihr weitere unterschiedliche Türme.",
       "Mit Karton, Toilettenrollen und Leim habt ihr den Big Ben nachgebaut. Zusätzlich baut ihr noch weitere unterschiedliche Türme.",
     material: "Karton, Toilettenrollen, Leim",
     category: "Modellbau",
@@ -44,6 +46,7 @@ const projects = [
     title: "Altstadt von Sitten in Minecraft",
     team: "Schülergruppe",
     details:
+      "In Minecraft habt ihr die Altstadt von Sitten nachgebaut. Zusätzlich ergänzt ihr mittelalterliche Türme.",
       "In Minecraft habt ihr die Altstadt von Sitten nachgebaut. Ausserdem fügt ihr mittelalterliche Türme hinzu und baut sie weiter aus.",
     material: "Minecraft",
     category: "Gaming",
@@ -54,6 +57,7 @@ const projects = [
     title: "Jack Daniel’s Designlampe",
     team: "2 Schüler",
     details:
+      "Ihr stellt eine kreative Lampe aus Holz, Farbe und einer Jack Daniel’s Flasche her.",
       "Ihr stellt eine kreative Lampe aus Holz, Farbe und einer Jack Daniel’s Flasche her. Das Endprodukt ist eine dekorative kleine Lampe mit Holzrahmen.",
     material: "Holz, Farbe, Jack Daniel’s Flasche",
     category: "Design",
@@ -229,6 +233,7 @@ projects.forEach((project, index) => {
   card.innerHTML = `
     <p class="project-number">Projekt ${index + 1}</p>
     <h3 class="project-title">${project.title}</h3>
+    <p class="project-team">${project.team}</p>
     <p class="project-tech">${project.team}</p>
     <p class="project-description">${project.details}</p>
     <p class="project-material"><strong>Material/Tool:</strong> ${project.material}</p>
