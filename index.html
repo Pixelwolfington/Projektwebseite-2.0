@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Technik & Informatik – OS Naters</title>
+    <title>Technik & Informatik – Schulprojekte</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -15,6 +16,75 @@
           Hier seht ihr alle aktuellen Projekte eurer Gruppe aus Technik und
           Informatik.
         </p>
+        <h1>Eure Projektplattform</h1>
+        <p class="intro">
+          Hier seht ihr alle aktuellen Projekte aus eurer Technik- und
+          Informatikgruppe – digital, kreativ und handwerklich.
+        </p>
+
+        <nav class="hero-nav" aria-label="Seitennavigation">
+          <a class="cta" href="#projekte">Projekte</a>
+          <a class="cta ghost" href="#ueber-uns">Über uns</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container stats" aria-label="Projektübersicht">
+        <article class="stat-card">
+          <p class="stat-label">Projekte</p>
+          <p class="stat-value" id="projectCount">0</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-label">Teilnehmende Gruppen</p>
+          <p class="stat-value" id="teamCount">0</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-label">Materialien & Tools</p>
+          <p class="stat-value" id="materialCount">0</p>
+        </article>
+      </section>
+
+      <section class="container" id="projekte">
+        <h2>Aktuelle Projekte</h2>
+        <p class="section-text">
+          Nutzt die Suche und die Filter, um eure Projekte schneller zu finden.
+        </p>
+
+        <div class="toolbar" role="search">
+          <label class="sr-only" for="searchInput">Projekt suchen</label>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="z. B. Minecraft, 3D-Druck, Holz..."
+          />
+          <div class="filter-buttons" id="filterButtons"></div>
+        </div>
+
+        <p class="result-text" id="resultText" aria-live="polite"></p>
+        <p class="update-hint">Tipp: Änderungen an <code>projects.json</code> werden nach einem Neuladen (Strg+F5) sichtbar.</p>
+        <div class="project-grid" id="projectGrid"></div>
+      </section>
+
+      <section class="container" id="ueber-uns">
+        <h2>Über uns</h2>
+        <p class="section-text">
+          Ihr arbeitet in Teams an realen Projektideen und verbindet Technik,
+          Informatik, Kreativität und Handarbeit. So entstehen digitale Modelle,
+          Gaming-Projekte und physische Bauten.
+        </p>
+      </section>
+        <p class="kicker">Gruppe Technik & Informatik</p>
+        <h1>Eure Schulprojekte auf einen Blick</h1>
+        <p class="intro">
+          Auf dieser Seite seht ihr alle aktuellen Projekte eurer Gruppe –
+        <h1>Unsere Schulprojekte auf einen Blick</h1>
+        <p class="intro">
+          Auf dieser Seite findest du alle aktuellen Projekte unserer Gruppe –
+          von digitalen 3D-Modellen bis zu kreativen Werkstücken aus Holz,
+          Karton und weiteren Materialien.
+        </p>
+        <a class="cta" href="#projekte">Zu den Projekten</a>
       </div>
     </header>
 
@@ -24,6 +94,11 @@
         <p class="section-text">
           Jede Karte zeigt das Projekt, die Teamgröße und die verwendeten
           Materialien oder Tools.
+        <h2>Aktuelle Projekte (7 Teams)</h2>
+        <p class="section-text">
+          Die Karten unten zeigen euch die Projektidee, Teamgröße und die verwendeten
+          Die Karten unten zeigen die Projektidee, Teamgröße und die verwendeten
+          Materialien bzw. Tools.
         </p>
 
         <div class="project-grid" id="projectGrid"></div>
@@ -34,6 +109,7 @@
       <div class="container footer-content">
         <p>© 2026 Gruppe Technik & Informatik</p>
         <p>OS Naters</p>
+        <p>Schule Musterstadt</p>
       </div>
     </footer>
 
