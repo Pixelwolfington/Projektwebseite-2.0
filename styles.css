@@ -94,6 +94,16 @@ h2 {
   box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
 }
 
+
+.project-number {
+  margin: 0 0 0.4rem;
+  color: var(--primary-dark);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
 .project-title {
   margin: 0;
   font-size: 1.1rem;
@@ -125,4 +135,11 @@ footer {
   flex-wrap: wrap;
   color: #334155;
   font-size: 0.95rem;
+}
+
+
+.project-material {
+  margin: 0.75rem 0 0;
+  color: #334155;
+  font-size: 0.9rem;
 }
