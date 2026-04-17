@@ -171,6 +171,14 @@ input[type="search"] {
   font-size: 0.95rem;
 }
 
+.update-hint {
+  margin: 0.45rem 0 0;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.project-grid {
+  margin-top: 1rem;
 .project-grid {
   margin-top: 1rem;
 .project-grid {
@@ -252,6 +260,11 @@ input[type="search"] {
 .empty-state {
   grid-column: 1 / -1;
   text-align: center;
+}
+
+.error-state {
+  border-color: #fecaca;
+  background: #fff7f7;
 }
 
 .sr-only {

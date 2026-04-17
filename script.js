@@ -1,3 +1,4 @@
+let projects = [];
 const projects = [
   {
     title: "Spielentwicklung mit 3D-Druck",
@@ -82,6 +83,38 @@ const materialCount = document.getElementById("materialCount");
 
 let currentFilter = "Alle";
 let searchValue = "";
+let categories = ["Alle"];
+
+function showError(message) {
+  projectGrid.innerHTML = `
+    <article class="project-card empty-state error-state">
+      <h3 class="project-title">Daten konnten nicht geladen werden</h3>
+      <p class="project-description">${message}</p>
+    </article>
+  `;
+}
+
+async function loadProjects() {
+  try {
+    const response = await fetch(`projects.json?v=${Date.now()}`);
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
+    projects = await response.json();
+    categories = ["Alle", ...new Set(projects.map((project) => project.category))];
+
+    createFilterButtons();
+    updateStats();
+    renderProjects();
+  } catch (error) {
+    console.error(error);
+    showError(
+      "Bitte startet die Seite über einen lokalen Server (z. B. `python3 -m http.server`) und aktualisiert danach mit Strg+F5."
+    );
+  }
+}
 
 const categories = ["Alle", ...new Set(projects.map((project) => project.category))];
 
@@ -102,6 +135,8 @@ function updateStats() {
 }
 
 function createFilterButtons() {
+  filterButtons.innerHTML = "";
+
   categories.forEach((category) => {
     const button = document.createElement("button");
     button.type = "button";
@@ -182,6 +217,7 @@ searchInput.addEventListener("input", (event) => {
   renderProjects();
 });
 
+loadProjects();
 updateStats();
 createFilterButtons();
 renderProjects();
