@@ -6,6 +6,8 @@ const projects = [
       "Ihr entwickelt ein Spiel in einem Online-Programm auf einer Webseite. Nach der Fertigstellung druckt ihr passende Elemente als 3D-Modelle aus.",
     material: "Online-Programm, 3D-Druck",
     category: "Digital",
+      "Die Gruppe entwickelt ein Spiel in einem Online-Programm auf einer Webseite. Nach Fertigstellung werden Elemente des Spiels als 3D-Modelle ausgedruckt.",
+    material: "Online-Programm, 3D-Druck",
   },
   {
     title: "Solarsystem als 3D-Modell",
@@ -14,6 +16,8 @@ const projects = [
       "Ihr habt mit demselben Online-Programm ein Solarsystem modelliert und als 3D-gedrucktes Exemplar umgesetzt. So könnt ihr alle Planeten anschauen.",
     material: "Online-Programm, 3D-Druck",
     category: "3D-Druck",
+      "Mit demselben Online-Programm wurde ein Solarsystem modelliert und als 3D-gedrucktes Exemplar umgesetzt. Alle Planeten können betrachtet werden.",
+    material: "Online-Programm, 3D-Druck",
   },
   {
     title: "Flughafen Zürich als Holzmodell",
@@ -22,6 +26,8 @@ const projects = [
       "Ihr habt den Flughafen Zürich als 1:1-Nachbau in Holz gestaltet. Dafür habt ihr Farben, Leim und weitere Werkmaterialien eingesetzt.",
     material: "Holz, Farben, Leim",
     category: "Modellbau",
+      "Die Gruppe hat den Flughafen Zürich als 1:1-Nachbau in Holz gestaltet. Dafür nutzten sie Farben, Leim und weitere Werkmaterialien.",
+    material: "Holz, Farben, Leim",
   },
   {
     title: "Big Ben und weitere Türme",
@@ -30,6 +36,8 @@ const projects = [
       "Mit Karton, Toilettenrollen und Leim habt ihr den Big Ben nachgebaut. Zusätzlich baut ihr noch weitere unterschiedliche Türme.",
     material: "Karton, Toilettenrollen, Leim",
     category: "Modellbau",
+      "Mit Karton, Toilettenrollen und Leim entstand ein Nachbau des Big Ben. Zusätzlich wurden weitere unterschiedliche Türme gebaut.",
+    material: "Karton, Toilettenrollen, Leim",
   },
   {
     title: "Altstadt von Sitten in Minecraft",
@@ -38,6 +46,8 @@ const projects = [
       "In Minecraft habt ihr die Altstadt von Sitten nachgebaut. Ausserdem fügt ihr mittelalterliche Türme hinzu und baut sie weiter aus.",
     material: "Minecraft",
     category: "Gaming",
+      "Im Spiel Minecraft wurde die Altstadt von Sitten nachgebaut. Ergänzt wurde das Projekt durch mittelalterliche Türme.",
+    material: "Minecraft",
   },
   {
     title: "Jack Daniel’s Designlampe",
@@ -46,6 +56,8 @@ const projects = [
       "Ihr stellt eine kreative Lampe aus Holz, Farbe und einer Jack Daniel’s Flasche her. Das Endprodukt ist eine dekorative kleine Lampe mit Holzrahmen.",
     material: "Holz, Farbe, Jack Daniel’s Flasche",
     category: "Design",
+      "Die Gruppe baute eine kreative Lampe aus Holz, Farbe und einer Jack Daniel’s Flasche. Das Ergebnis ist eine dekorative kleine Lampe mit Holzrahmen.",
+    material: "Holz, Farbe, Jack Daniel’s Flasche",
   },
   {
     title: "Kleiner Schaft aus Ölfass",
@@ -54,6 +66,8 @@ const projects = [
       "Aus einem ca. 1000-Liter-Ölfass baut ihr einen kleinen Schaft mit Holzverkleidung im Inneren.",
     material: "Ölfass, Holz",
     category: "Upcycling",
+      "Aus einem ca. 1000-Liter-Ölfass wurde ein kleiner Schaft mit Holzverkleidung im Inneren gebaut.",
+    material: "Ölfass, Holz",
   },
 ];
 
@@ -171,3 +185,18 @@ searchInput.addEventListener("input", (event) => {
 updateStats();
 createFilterButtons();
 renderProjects();
+
+projects.forEach((project, index) => {
+  const card = document.createElement("article");
+  card.className = "project-card";
+
+  card.innerHTML = `
+    <p class="project-number">Projekt ${index + 1}</p>
+    <h3 class="project-title">${project.title}</h3>
+    <p class="project-tech">${project.team}</p>
+    <p class="project-description">${project.details}</p>
+    <p class="project-material"><strong>Material/Tool:</strong> ${project.material}</p>
+  `;
+
+  projectGrid.appendChild(card);
+});
