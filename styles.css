@@ -30,6 +30,7 @@ body {
   background: linear-gradient(135deg, #0f172a, #1d4ed8);
   color: #fff;
   padding: 4.5rem 0 3.5rem;
+  padding: 5rem 0 4rem;
 }
 
 .kicker {
@@ -43,6 +44,7 @@ body {
 h1 {
   font-size: clamp(2rem, 5vw, 3.2rem);
   margin: 0.7rem 0;
+  margin: 0.5rem 0;
 }
 
 .intro {
@@ -58,11 +60,16 @@ h1 {
 }
 
 .cta {
+}
+
+.cta {
+  margin-top: 1rem;
   display: inline-block;
   background: #fff;
   color: #0f172a;
   text-decoration: none;
   padding: 0.65rem 1.1rem;
+  padding: 0.7rem 1.2rem;
   border-radius: 999px;
   font-weight: 700;
 }
@@ -107,6 +114,8 @@ main {
 
 section {
   padding-top: 2.2rem;
+main {
+  padding: 2.5rem 0 4rem;
 }
 
 h2 {
@@ -170,6 +179,10 @@ input[type="search"] {
 
 .project-grid {
   margin-top: 1rem;
+.project-grid {
+  margin-top: 1rem;
+.project-grid {
+  margin-top: 1.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.1rem;
@@ -187,6 +200,20 @@ input[type="search"] {
   margin: 0 0 0.35rem;
   color: var(--primary-dark);
   font-size: 0.78rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
+}
+
+
+.project-number {
+  margin: 0 0 0.4rem;
+  color: var(--primary-dark);
+  font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -205,11 +232,14 @@ input[type="search"] {
 
 .project-title {
   margin: 0.6rem 0 0;
+.project-title {
+  margin: 0;
   font-size: 1.1rem;
 }
 
 .project-tech {
   margin: 0.35rem 0 0.45rem;
+  margin: 0.4rem 0 0.6rem;
   font-size: 0.9rem;
   color: var(--primary-dark);
   font-weight: 600;
@@ -251,6 +281,8 @@ input[type="search"] {
 
 footer {
   border-top: 1px solid var(--border);
+footer {
+  border-top: 1px solid #d6deea;
   background: #fff;
 }
 
@@ -262,4 +294,11 @@ footer {
   flex-wrap: wrap;
   color: #334155;
   font-size: 0.95rem;
+}
+
+
+.project-material {
+  margin: 0.75rem 0 0;
+  color: #334155;
+  font-size: 0.9rem;
 }
