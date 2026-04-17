@@ -120,8 +120,6 @@ async function loadProjects() {
   }
 }
 
-const categories = ["Alle", ...new Set(projects.map((project) => project.category))];
-
 function updateStats() {
   projectCount.textContent = projects.length;
   teamCount.textContent = projects.length;

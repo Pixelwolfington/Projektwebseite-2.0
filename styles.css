@@ -29,7 +29,6 @@ body {
 .hero {
   background: linear-gradient(135deg, #0f172a, #1d4ed8);
   color: #fff;
-  padding: 4.5rem 0 3.5rem;
   padding: 5rem 0 4rem;
 }
 
@@ -43,7 +42,6 @@ body {
 
 h1 {
   font-size: clamp(2rem, 5vw, 3.2rem);
-  margin: 0.7rem 0;
   margin: 0.5rem 0;
 }
 
@@ -62,15 +60,11 @@ h1 {
 }
 
 .cta {
-}
-
-.cta {
   margin-top: 1rem;
   display: inline-block;
   background: #fff;
   color: #0f172a;
   text-decoration: none;
-  padding: 0.65rem 1.1rem;
   padding: 0.7rem 1.2rem;
   border-radius: 999px;
   font-weight: 700;
@@ -116,8 +110,6 @@ main {
 
 section {
   padding-top: 2.2rem;
-main {
-  padding: 2.5rem 0 4rem;
 }
 
 h2 {
@@ -182,10 +174,6 @@ input[type="search"] {
 }
 
 .project-grid {
-  margin-top: 1rem;
-.project-grid {
-  margin-top: 1rem;
-.project-grid {
   margin-top: 1.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -197,22 +185,14 @@ input[type="search"] {
   border-radius: 16px;
   box-shadow: var(--shadow);
   padding: 1.2rem;
-  border: 1px solid var(--border);
-}
-
-.project-number {
-  margin: 0 0 0.35rem;
-  color: var(--primary-dark);
-  font-size: 0.78rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
   border: 1px solid #e2e8f0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
 }
-
 
 .project-number {
   margin: 0 0 0.4rem;
@@ -236,15 +216,12 @@ input[type="search"] {
 
 .project-title {
   margin: 0.6rem 0 0;
-.project-title {
-  margin: 0;
   font-size: 1.1rem;
 }
 
 .project-team {
   margin: 0.35rem 0 0.45rem;
 .project-tech {
-  margin: 0.35rem 0 0.45rem;
   margin: 0.4rem 0 0.6rem;
   font-size: 0.9rem;
   color: var(--primary-dark);
@@ -289,24 +266,29 @@ footer {
 
 footer {
   border-top: 1px solid var(--border);
-footer {
-  border-top: 1px solid #d6deea;
   background: #fff;
+  color: #475569;
 }
 
 .footer-content {
-  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
-  color: #334155;
+  padding: 1.1rem 0;
   font-size: 0.95rem;
 }
 
+.footer-content p {
+  margin: 0;
+}
 
-.project-material {
-  margin: 0.75rem 0 0;
-  color: #334155;
-  font-size: 0.9rem;
+@media (max-width: 680px) {
+  .hero {
+    padding-top: 3.8rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
